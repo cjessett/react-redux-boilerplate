@@ -4,10 +4,15 @@
   "scripts": {
     "lint": "eslint .",
     "start:dev": "NODE_ENV=development node server",
-    "test": "NODE_ENV=test mocha test/helpers/browser.js test/**/*.spec.js*"
+    "start": "node server/index.js",
+    "test": "NODE_ENV=test mocha test/helpers/browser.js test/**/*.spec.js*",
+    "postinstall": "webpack --config webpack.config.prod.js --progress"
+  },
+  "engines": {
+    "node":"6.9.5"
   },
   "description": "Boilerplate for react-redux apps",
-  "main": "index.js",
+  "main": "server/index.js",
   "author": "CJ Jessett <cjessett@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/cjessett/react-redux-boilerplate",

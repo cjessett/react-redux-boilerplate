@@ -1,0 +1,12 @@
+{
+  "name": "Node.js Sample",
+  "description": "A Node.js app using Express 4 and React",
+  "repository": "https://github.com/cjessett/react-redux-boilerplate",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "weback", "react"],
+  "env": {
+    "NPM_CONFIG_PRODUCTION": {
+      "value": "false"
+    }
+  }
+}
